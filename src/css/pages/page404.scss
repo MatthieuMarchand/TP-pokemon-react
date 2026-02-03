@@ -1,0 +1,21 @@
+section.section-page-404 {
+  color: white;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  a {
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition: 0.2s;
+
+    &:hover {
+      scale: 0.98;
+    }
+  }
+}

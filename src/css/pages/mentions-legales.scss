@@ -1,0 +1,33 @@
+section.section-mentions-legales {
+  max-width: 50rem;
+  color: white;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-top: 3rem;
+  }
+
+  p {
+    line-height: 135%;
+    font-size: 20px;
+  }
+
+  a {
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 28px;
+    display: inline-block;
+    transition: 0.2s;
+
+    &:hover {
+      scale: 0.98;
+    }
+  }
+}
