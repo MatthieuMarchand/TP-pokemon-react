@@ -58,9 +58,7 @@ const DetailPokemon = ({ pokedex, setPokedex }) => {
   return (
     <div className="detail-container">
       <div className="navigation">
-        <Link to="/" className="btn-return">
-          ← Retour à l'accueil
-        </Link>
+        <Link to="/">Retour</Link>
       </div>
 
       <div className="content-wrapper">
@@ -70,31 +68,6 @@ const DetailPokemon = ({ pokedex, setPokedex }) => {
             pokedex={pokedex}
             setPokedex={setPokedex}
           />
-        </div>
-
-        <div className="evolutions-section">
-          <h3>Famille d'évolution</h3>
-          <div className="evolution-list">
-            {family.length > 0 ? (
-              family.map((member) => (
-                <Link
-                  key={member.id}
-                  to={`/pokemon/${member.id}`}
-                  className={`evo-item ${member.id === pokemon.id ? "current" : ""}`}
-                >
-                  <div className="evo-img-wrapper">
-                    <img
-                      src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${member.id}.png`}
-                      alt={member.name}
-                    />
-                  </div>
-                  <span>{member.name}</span>
-                </Link>
-              ))
-            ) : (
-              <p style={{ color: "white" }}>Chargement de la famille...</p>
-            )}
-          </div>
         </div>
       </div>
     </div>
